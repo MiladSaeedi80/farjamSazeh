@@ -508,14 +508,46 @@
 
     <!--js-->
     <script src="assest/jQuery/jquery-3.5.1.min.js"></script>
-    <script src="assest/assets/OwlCarousel/dist/owl.carousel.js"></script>
+
     <script src="assest/bootstrap-4.5.0-dist/js/bootstrap.js"></script>
     <script src="assest/jQuery/wow.min.js"></script>
     <script src='assest/jQuery/Scroll-To-Top-Plugin-jQuery-Scrolls/scrolls.js'></script>
     <script src="assest/jQuery/Minimal-jQuery-Countdown-Plugin-with-Custom-Timezone-Countdown-Clock/jquery.countdown.js"></script>
-    <script src="assest/jQuery/counter_up/jquery.counterup.min.js"></script>
 
+    <script src="assest/jQuery/counter_up/jquery.counterup.min.js"></script>
+    <script src="assest/assets/OwlCarousel/dist/owl.carousel.js"></script>
     <script src="assest/script/script.js"></script>
 </body>
+
+
+<script>
+    /*owl-carsoul*/
+    $('.owl-projects').owlCarousel({
+        loop: true,
+        // dots:false,
+        margin: 7,
+        items: 3,
+        autoplay: true,
+        autoplayTimeout: 2000,
+        autoplaySpeed: 1200,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+
+
+            786: {
+                items: 2
+            },
+            992: {}
+        }
+    });
+
+    /*counter*/
+    $('.counter').counterUp({
+        time: 2000
+    });
+</script>
 
 </html>
